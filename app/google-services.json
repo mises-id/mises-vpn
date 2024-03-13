@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "720482663809",
+    "project_id": "v2lib-37241",
+    "storage_bucket": "v2lib-37241.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720482663809:android:dd152a7c250819756d3c80",
+        "android_client_info": {
+          "package_name": "com.test.demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9uZAKhM99QN9_zADcB2gzzFUZkomXEds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
