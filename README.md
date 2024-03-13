@@ -1,1 +1,1 @@
-# mises-vpn
+# mises-vpn-beta
