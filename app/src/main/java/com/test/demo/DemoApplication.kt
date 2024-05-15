@@ -6,7 +6,41 @@ import com.vpn.lib.VPNInit
 class DemoApplication: Application() {
     override fun onCreate() {
         super.onCreate()
-        //subUrl为服务器地址，国内测试url为https://f4ee0069-3385-3d53-b31e-2e26602d6337.subdotu.com/link/EExDwNuEySSN43Gl?sub=3，正式上线请通知我们配置
-        VPNInit.init(this,"https://f4ee0069-3385-3d53-b31e-2e26602d6337.subdotu.com/link/EExDwNuEySSN43Gl?sub=3")
+        VPNInit.init(this, object : VPNInit.ISdk {
+            override fun getConfig(ip: String): String {
+                val errResponse = """
+                {
+                    "code":-1,
+                    "msg":"service error"
+                }
+                """.trimIndent()
+                val url = "https://api1.test.mises.site/api/v1/vpn/server_link"
+                val jsonPayload = """
+                {
+                    "server": "$ip"
+                }
+                """.trimIndent()
+                return try {
+                    httpPost(url, jsonPayload) ?: errResponse
+                } catch (e: Exception) {
+                    errResponse
+                }
+            }
+
+            override fun getServer(): String {
+                val errResponse = """
+                {
+                    "code":-1,
+                    "msg":"service error"
+                }
+                """.trimIndent()
+                val url = "https://api1.test.mises.site/api/v1/vpn/server_list"
+                return try {
+                    httpGet(url) ?: ""
+                } catch (e: Exception) {
+                    errResponse
+                }
+            }
+        })
     }
 }

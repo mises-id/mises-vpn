@@ -67,7 +67,6 @@ android {
         }
     }
 
-
 }
 
 dependencies {
@@ -88,10 +87,7 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-    implementation("androidx.appcompat:appcompat:1.6.1")
 
-
-    implementation(fileTree("libs"))
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.cardview:cardview:1.0.0")
@@ -109,5 +105,5 @@ dependencies {
     implementation("me.drakeet.support:toastcompat:1.1.0")
     implementation(platform("com.google.firebase:firebase-bom:32.7.3"))
     implementation("com.google.firebase:firebase-analytics")
-    
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
 }
