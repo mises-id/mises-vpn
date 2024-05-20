@@ -100,7 +100,10 @@ dependencies {
 //    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
 
     // android java
-    implementation("androidx.lifecycle:lifecycle-runtime-java:2.7.0")
+    implementation("androidx.activity:activity:1.8.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-livedata:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime:2.7.0")
 
     //kotlin
     implementation("com.tencent:mmkv-static:1.2.15")
