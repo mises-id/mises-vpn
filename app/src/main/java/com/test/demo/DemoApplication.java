@@ -17,7 +17,7 @@ public class DemoApplication extends Application {
         VPNInit.INSTANCE.init(this, new VPNInit.ISdk() {
             @NonNull
             @Override
-            public String getConfig(String ip) {
+            public String getConfig(@NonNull String ip) {
                 String errResponse = "{ \"code\": -1, \"msg\": \"service error\" }";
                 String url = "https://api1.test.mises.site/api/v1/vpn/server_link";
                 String jsonPayload = "{ \"server\": \"" + ip + "\" }";
