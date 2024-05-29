@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class Utils {
 
     private static final String CONTENT_TYPE_JSON = "application/json; charset=utf-8";
-    private static final String AUTHORIZATION_TOKEN = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJldGhfYWRkcmVzcyI6IjB4MzgzNmY2OThkNGU3ZDcyNDljY2MzMjkxZDljY2Q2MDhlZTcxODk4OCIsImV4cCI6MTcxNjc5MzM4MywibWlzZXNpZCI6ImRpZDptaXNlczptaXNlczE3a2RxeGZ6cDc1NHcwMDNhaGZqbDU0eXdwajU1amM5M3l1NjNzZiIsInVpZCI6NTAxNzA4LCJ1c2VybmFtZSI6IiJ9.pj4UKuYXvTeAh962AnvJxDNcO8WCWoFXvwHI2pO1kMQ";
+    private static final String AUTHORIZATION_TOKEN = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJldGhfYWRkcmVzcyI6IjB4MzgzNmY2OThkNGU3ZDcyNDljY2MzMjkxZDljY2Q2MDhlZTcxODk4OCIsImV4cCI6MTcxNzU0OTU4NiwibWlzZXNpZCI6ImRpZDptaXNlczptaXNlczE3a2RxeGZ6cDc1NHcwMDNhaGZqbDU0eXdwajU1amM5M3l1NjNzZiIsInVpZCI6NTAxNzA4LCJ1c2VybmFtZSI6IiJ9.wMU1wnaCK2HwP0ebuSu_qTOxfdrNYghO6vqAo3VKGqs";
     private static final long TIMEOUT = 30L; // Timeout in seconds
 
     public static Response executeRequest(String method, String url, RequestBody requestBody, Map<String, String> headers) throws IOException {
